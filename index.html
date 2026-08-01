@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi Sitio - Plantilla</title>
+  <meta name="description" content="Plantilla simple para GitHub Pages" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="/">Mi Sitio</a></h1>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero container">
+      <h2>Bienvenido a mi página</h2>
+      <p>Esta es una plantilla estática lista para publicar en GitHub Pages.</p>
+      <a class="btn" href="#contacto">Contáctame</a>
+    </section>
+
+    <section id="acerca" class="container cards">
+      <article class="card">
+        <h3>Rápido</h3>
+        <p>HTML/CSS/JS simples, carga rápida y fácil de mantener.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive</h3>
+        <p>Se adapta a móviles y escritorio.</p>
+      </article>
+      <article class="card">
+        <h3>Fácil de publicar</h3>
+        <p>Preparada para GitHub Pages en minutos.</p>
+      </article>
+    </section>
+
+    <section id="contacto" class="container contact">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <label>
+          Nombre
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Correo
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="formMessage" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mi Sitio — Hecho con ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
